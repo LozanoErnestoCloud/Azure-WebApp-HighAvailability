@@ -54,5 +54,3 @@ Durante este proyecto, aprendí a:
 - [Documentación oficial de Azure](https://docs.microsoft.com/en-us/azure)
 - [Guía de Load Balancer en Azure](https://docs.microsoft.com/en-us/azure/load-balancer)
 
-## 📝 Licencia
-Este proyecto está bajo la licencia MIT - [Mira la licencia](LICENSE).
