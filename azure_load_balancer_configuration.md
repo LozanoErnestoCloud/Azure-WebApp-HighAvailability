@@ -13,7 +13,6 @@ El objetivo del **Azure Load Balancer** es distribuir el tráfico entrante de re
    - **Region**: Elige la misma región donde están tus VMs.
    - **SKU**: Elige **Standard** para mayor resiliencia y soporte a escalabilidad automática. También puedes usar **Basic** si es un entorno de prueba.
    - **Type**: Selecciona **Public** para hacer el balanceador accesible desde Internet (para una aplicación pública). Selecciona **Internal** si el tráfico será solo interno entre tus servicios.
-   - **IP Address Type**: Selecciona **IPv4**.
 
 - Haz clic en **Next: Frontend IP Configuration**.
 
@@ -54,8 +53,6 @@ Los **Health Probes** son importantes para monitorear el estado de las máquinas
 
 - Haz clic en **Add** para crear el health probe.
 
-- Haz clic en **Next: Load Balancing Rules**.
-
 ## 6. Configurar las Reglas de Balanceo de Carga (Load Balancing Rules)
 Las reglas de balanceo definen cómo el Load Balancer distribuye el tráfico entre las VMs.
 
@@ -71,7 +68,6 @@ Las reglas de balanceo definen cómo el Load Balancer distribuye el tráfico ent
    - **Floating IP**: Déjalo en **Disabled** (a menos que estés usando un escenario de clúster, como SQL AlwaysOn).
 
 - Haz clic en **Add** para crear la regla.
-- Haz clic en **Next: Inbound NAT Rules** si necesitas configurar acceso directo a las VMs (por ejemplo, RDP o SSH). De lo contrario, haz clic en **Review + Create**.
 
 ## Prueba del Load Balancer
 Una vez que el Load Balancer esté configurado, puedes hacer pruebas para verificar que el tráfico se distribuye correctamente entre las máquinas virtuales:
